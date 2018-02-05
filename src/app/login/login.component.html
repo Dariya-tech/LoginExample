@@ -1,0 +1,13 @@
+<div class="center-block">
+    <form novalidate [formGroup]="form">
+        <div class="form-group" [class.error]="(form.controls.name.invalid && form.controls.name.touched)">
+            <label>UserName</label>
+            <input type="text" formControlName="name"/>
+        </div>
+        <div class="form-group" [class.error]="(form.controls.password.invalid && form.controls.password.touched)">
+          <label>PassWord</label>
+          <input type="password" formControlName="password"/>
+      </div>
+      <button class="btn" (click)="submitForm()">Submit</button>
+    </form>
+</div>

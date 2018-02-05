@@ -1,0 +1,25 @@
+.form-group{
+    margin-bottom: 10px;
+}
+.center-block{
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #2c2c2c;
+    box-sizing: border-box;
+    background-color: lightblue;
+    max-width: 500px;
+    min-width: 320px;
+}
+
+.form-group label{
+    width: 100px;
+    display: inline-block;
+}
+.form-group.error input{
+    border: 1px solid red;
+}
+
+.form-group input{
+    width: 200px;
+}
