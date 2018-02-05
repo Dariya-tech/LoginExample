@@ -13,7 +13,9 @@ export class LoginComponent implements OnInit {
     this.form = this.fb.group({
       name: ['', [Validators.required]],
       password: ['', [Validators.required]]
-    })
+    });
+    //This Will Find the words
+    console.log(this.findWords());
   }
 
   submitForm():void {
@@ -24,7 +26,6 @@ export class LoginComponent implements OnInit {
     }
   }
   checkForm():boolean{
-    console.log(this.findNumber());
     this.form.controls.name.markAsTouched();
     this.form.controls.password.markAsTouched();
     let isValid: boolean = false;
@@ -34,7 +35,7 @@ export class LoginComponent implements OnInit {
      return isValid;
   }
 
-  findNumber(): any[]{
+  findWords(): any[]{
     const books:string[] =  ['how', 'to' , 'use',  'this' , 'word', 'how', 'to' , 'use',  'this' , 'word', 'word', 'to'];
     let result = {};
     let resultArray = [];
