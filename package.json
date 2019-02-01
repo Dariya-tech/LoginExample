@@ -1,5 +1,5 @@
 {
-  "name": "login",
+  "name": "login-example",
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
@@ -10,6 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "author":"Dariya Sk",
   "private": true,
   "dependencies": {
     "@angular/animations": "^5.2.0",
